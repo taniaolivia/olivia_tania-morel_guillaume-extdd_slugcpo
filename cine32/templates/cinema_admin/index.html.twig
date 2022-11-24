@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cine32 admin{% endblock %}
+
+{% block body %}
+<h1 class = "title">Liste de cinemas</h1>
+
+    <ul class = "listeCinemas">
+    {% for cinema in cinemas %}
+        <li>{{ cinema.nom }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
